@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://allnaturalcatlitter.com/sitemap-index.xml

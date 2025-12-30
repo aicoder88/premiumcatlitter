@@ -56,7 +56,7 @@ const footerLinks = {
                   href={link.href}
                   class="footer__link"
                   target={link.external ? '_blank' : undefined}
-                  rel={link.external ? 'noopener' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
                 >
                   {link.label}
                   {link.external && <span class="footer__external">&#8599;</span>}
@@ -75,7 +75,7 @@ const footerLinks = {
                   href={link.href}
                   class="footer__link"
                   target={link.external ? '_blank' : undefined}
-                  rel={link.external ? 'noopener' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
                 >
                   {link.label}
                   {link.external && <span class="footer__external">&#8599;</span>}
@@ -93,7 +93,7 @@ const footerLinks = {
         href="https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=footer-cta"
         class="btn btn-primary"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         Discover Purrify
       </a>

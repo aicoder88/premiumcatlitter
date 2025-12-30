@@ -19,7 +19,7 @@ const {
 
 const siteName = 'Premium Cat Litter';
 const fullTitle = title === 'Home' ? siteName : `${title} | ${siteName}`;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://premiumcatlitter.com');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://allnaturalcatlitter.com');
 ---
 
 <!DOCTYPE html>
@@ -55,18 +55,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://premiumc
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Schema.org -->
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": siteName,
-      "url": "https://premiumcatlitter.com",
+      "url": "https://allnaturalcatlitter.com",
       "description": description,
       "publisher": {
         "@type": "Organization",
         "name": siteName,
         "logo": {
           "@type": "ImageObject",
-          "url": "https://premiumcatlitter.com/logo.png"
+          "url": "https://allnaturalcatlitter.com/logo.png"
         }
       }
     })} />
