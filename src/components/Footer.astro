@@ -1,0 +1,252 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  explore: [
+    { href: '/why-premium', label: 'Why Premium Matters' },
+    { href: '/comparison', label: 'Compare Options' },
+    { href: '/ingredients', label: 'Quality Ingredients' },
+    { href: '/guide', label: 'Buying Guide' },
+  ],
+  purrify: [
+    { href: 'https://purrify.ca/?utm_source=premiumcatlitter&utm_medium=footer', label: 'Shop Purrify', external: true },
+    { href: 'https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=footer', label: 'All Products', external: true },
+    { href: 'https://purrify.ca/learn/how-it-works?utm_source=premiumcatlitter&utm_medium=footer', label: 'How It Works', external: true },
+    { href: 'https://purrify.ca/learn/science?utm_source=premiumcatlitter&utm_medium=footer', label: 'The Science', external: true },
+  ],
+  resources: [
+    { href: 'https://purrify.ca/learn/safety?utm_source=premiumcatlitter&utm_medium=footer', label: 'Safety Info', external: true },
+    { href: 'https://purrify.ca/learn/faq?utm_source=premiumcatlitter&utm_medium=footer', label: 'FAQ', external: true },
+    { href: 'https://purrify.ca/contact?utm_source=premiumcatlitter&utm_medium=footer', label: 'Contact Us', external: true },
+  ],
+};
+---
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <span class="footer__logo-icon">&#9830;</span>
+          <span class="footer__logo-text">Premium Cat Litter</span>
+        </a>
+        <p class="footer__tagline">
+          Elevating the standard for discerning cats and their devoted humans.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__column">
+          <h4 class="footer__heading">Explore</h4>
+          <ul class="footer__list">
+            {footerLinks.explore.map((link) => (
+              <li>
+                <a href={link.href} class="footer__link">{link.label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Shop Purrify</h4>
+          <ul class="footer__list">
+            {footerLinks.purrify.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="footer__link"
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener' : undefined}
+                >
+                  {link.label}
+                  {link.external && <span class="footer__external">&#8599;</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Resources</h4>
+          <ul class="footer__list">
+            {footerLinks.resources.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="footer__link"
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener' : undefined}
+                >
+                  {link.label}
+                  {link.external && <span class="footer__external">&#8599;</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__cta">
+      <p class="footer__cta-text">Ready to give your cat the premium experience?</p>
+      <a
+        href="https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=footer-cta"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener"
+      >
+        Discover Purrify
+      </a>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        &copy; {currentYear} Premium Cat Litter. A Purrify resource.
+      </p>
+      <p class="footer__disclaimer">
+        Educational content for cat owners seeking the finest in feline care.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style lang="scss">
+  @use '../styles/variables' as *;
+  @use '../styles/mixins' as *;
+
+  .footer {
+    background: $color-charcoal;
+    color: $color-text-light;
+    padding-top: $spacing-16;
+
+    &__container {
+      @include container;
+    }
+
+    &__top {
+      display: grid;
+      gap: $spacing-12;
+      padding-bottom: $spacing-12;
+      border-bottom: 1px solid rgba($color-gold, 0.2);
+
+      @include lg {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+
+    &__brand {
+      max-width: 300px;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+      text-decoration: none;
+      color: $color-cream;
+      margin-bottom: $spacing-4;
+    }
+
+    &__logo-icon {
+      color: $color-gold;
+      font-size: $font-size-xl;
+    }
+
+    &__logo-text {
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      font-weight: $font-weight-semibold;
+    }
+
+    &__tagline {
+      font-size: $font-size-sm;
+      color: rgba($color-cream, 0.7);
+      line-height: $line-height-relaxed;
+      margin-bottom: 0;
+    }
+
+    &__links {
+      display: grid;
+      gap: $spacing-8;
+
+      @include sm {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include md {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &__heading {
+      font-family: $font-body;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      color: $color-gold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: $spacing-4;
+    }
+
+    &__list {
+      @include flex-column;
+      gap: $spacing-3;
+    }
+
+    &__link {
+      font-size: $font-size-sm;
+      color: rgba($color-cream, 0.8);
+      text-decoration: none;
+      transition: color $transition-fast;
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-1;
+
+      &:hover {
+        color: $color-gold;
+      }
+    }
+
+    &__external {
+      font-size: $font-size-xs;
+      opacity: 0.6;
+    }
+
+    &__cta {
+      @include flex-center;
+      flex-direction: column;
+      gap: $spacing-4;
+      padding: $spacing-12 0;
+      text-align: center;
+      border-bottom: 1px solid rgba($color-gold, 0.2);
+    }
+
+    &__cta-text {
+      font-family: $font-heading;
+      font-size: $font-size-xl;
+      color: $color-cream;
+      margin-bottom: 0;
+
+      @include md {
+        font-size: $font-size-2xl;
+      }
+    }
+
+    &__bottom {
+      padding: $spacing-8 0;
+      text-align: center;
+    }
+
+    &__copyright {
+      font-size: $font-size-sm;
+      color: rgba($color-cream, 0.6);
+      margin-bottom: $spacing-2;
+    }
+
+    &__disclaimer {
+      font-size: $font-size-xs;
+      color: rgba($color-cream, 0.4);
+      margin-bottom: 0;
+    }
+  }
+</style>

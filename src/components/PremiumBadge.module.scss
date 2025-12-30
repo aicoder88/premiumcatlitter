@@ -1,0 +1,46 @@
+@use '../styles/variables' as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-body;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: $border-radius-full;
+  white-space: nowrap;
+}
+
+// Variants
+.gold {
+  background: linear-gradient(135deg, $color-gold, $color-gold-light);
+  color: $color-charcoal;
+}
+
+.dark {
+  background: $color-charcoal;
+  color: $color-gold;
+}
+
+.outline {
+  background: transparent;
+  color: $color-gold;
+  border: 1px solid $color-gold;
+}
+
+// Sizes
+.sm {
+  padding: 4px 10px;
+  font-size: 10px;
+}
+
+.md {
+  padding: 6px 14px;
+  font-size: 11px;
+}
+
+.lg {
+  padding: 8px 18px;
+  font-size: 12px;
+}

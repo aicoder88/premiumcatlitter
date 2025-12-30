@@ -1,0 +1,586 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PremiumBadge from '../components/PremiumBadge';
+---
+
+<Layout
+  title="Quality Ingredients in Premium Cat Litter"
+  description="Learn about the natural, safe ingredients that make premium cat litter superior. From activated charcoal to natural clays, understand what goes into quality litter."
+>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <PremiumBadge client:load variant="gold">Ingredient Transparency</PremiumBadge>
+      <h1>What Makes Premium<br /><span class="gradient-text">Ingredients Matter</span></h1>
+      <p class="page-hero__subtitle">
+        The secret to superior performance lies in carefully selected, natural ingredients
+        that work together to create the ultimate litter experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Ingredients -->
+  <section class="ingredients section">
+    <div class="container">
+      <div class="ingredients-grid">
+        <div class="ingredient-card ingredient-card--featured">
+          <div class="ingredient-card__badge">
+            <PremiumBadge client:load variant="dark" size="sm">Star Ingredient</PremiumBadge>
+          </div>
+          <div class="ingredient-card__icon">&#9899;</div>
+          <h3>Activated Charcoal / Biochar</h3>
+          <p class="ingredient-card__intro">
+            The gold standard in natural odor elimination.
+          </p>
+          <div class="ingredient-card__details">
+            <h4>How It Works</h4>
+            <p>
+              Activated charcoal has an incredibly porous surface structure—a single gram
+              contains over 3,000 square meters of surface area. This allows it to trap
+              and hold odor molecules at the molecular level, rather than masking them.
+            </p>
+            <h4>Benefits</h4>
+            <ul>
+              <li>Eliminates ammonia and sulfur compounds</li>
+              <li>100% natural and non-toxic</li>
+              <li>Sustainable when sourced from wood waste</li>
+              <li>Continues working for weeks</li>
+            </ul>
+          </div>
+          <a
+            href="https://purrify.ca/learn/science?utm_source=premiumcatlitter&utm_medium=ingredients"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Learn About Purrify's Formula
+          </a>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-card__icon">&#127960;</div>
+          <h3>Natural Bentonite Clay</h3>
+          <p class="ingredient-card__intro">
+            Premium-grade clay for instant, solid clumping.
+          </p>
+          <div class="ingredient-card__details">
+            <h4>How It Works</h4>
+            <p>
+              Bentonite clay absorbs moisture and expands, forming tight clumps around
+              waste. Premium grades are carefully processed to maximize clumping speed
+              and minimize dust.
+            </p>
+            <h4>Benefits</h4>
+            <ul>
+              <li>Instant clump formation</li>
+              <li>Easy scoop-out without crumbling</li>
+              <li>Naturally antibacterial</li>
+              <li>Highly absorbent</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-card__icon">&#129717;</div>
+          <h3>Natural Zeolites</h3>
+          <p class="ingredient-card__intro">
+            Volcanic minerals that neutralize ammonia.
+          </p>
+          <div class="ingredient-card__details">
+            <h4>How It Works</h4>
+            <p>
+              Zeolites have a unique honeycomb structure that traps ammonia molecules
+              through an ion-exchange process, effectively removing the primary source
+              of litter box odor.
+            </p>
+            <h4>Benefits</h4>
+            <ul>
+              <li>Specifically targets ammonia</li>
+              <li>Naturally occurring mineral</li>
+              <li>Extends litter life</li>
+              <li>Non-toxic if ingested</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-card__icon">&#127795;</div>
+          <h3>Plant-Based Fibers</h3>
+          <p class="ingredient-card__intro">
+            Sustainable materials from wood, corn, or wheat.
+          </p>
+          <div class="ingredient-card__details">
+            <h4>How It Works</h4>
+            <p>
+              Natural fibers provide structure, absorption, and a soft texture. Premium
+              formulas use sustainably sourced fibers processed to be dust-free and
+              highly absorbent.
+            </p>
+            <h4>Benefits</h4>
+            <ul>
+              <li>Biodegradable and compostable</li>
+              <li>Lightweight and easy to handle</li>
+              <li>Soft on sensitive paws</li>
+              <li>Pleasant natural scent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Avoid -->
+  <section class="avoid section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Ingredients to Avoid</h2>
+        <p class="section-subtitle">
+          Not all litter ingredients are created equal. Watch out for these
+          potentially problematic components.
+        </p>
+      </div>
+
+      <div class="avoid-grid">
+        <div class="avoid-card">
+          <div class="avoid-card__icon">&#9888;</div>
+          <h4>Artificial Fragrances</h4>
+          <p>
+            Strong perfumes can irritate sensitive cats and mask rather than
+            eliminate odors. Many cats avoid heavily scented litters.
+          </p>
+        </div>
+
+        <div class="avoid-card">
+          <div class="avoid-card__icon">&#9888;</div>
+          <h4>Sodium Bentonite (Low Grade)</h4>
+          <p>
+            Cheap sodium bentonite can swell in the digestive tract if ingested,
+            causing blockages. Premium calcium bentonite is safer.
+          </p>
+        </div>
+
+        <div class="avoid-card">
+          <div class="avoid-card__icon">&#9888;</div>
+          <h4>Silica Dust</h4>
+          <p>
+            Fine crystalline silica particles can cause respiratory issues with
+            prolonged exposure for both cats and humans.
+          </p>
+        </div>
+
+        <div class="avoid-card">
+          <div class="avoid-card__icon">&#9888;</div>
+          <h4>Chemical Clumping Agents</h4>
+          <p>
+            Synthetic polymers and chemicals used to enhance clumping may not
+            be safe if groomed off paws and ingested.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading Labels -->
+  <section class="labels section">
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-main">
+          <h2>How to Read Litter Labels</h2>
+          <p>
+            Understanding ingredient labels helps you make informed decisions. Here's
+            what to look for when shopping for premium litter.
+          </p>
+
+          <h3>Look For</h3>
+          <ul class="check-list">
+            <li>"99% dust-free" or "virtually dust-free"</li>
+            <li>"Natural ingredients" or "plant-based"</li>
+            <li>"Activated charcoal" or "biochar"</li>
+            <li>"No artificial fragrances"</li>
+            <li>"Veterinarian recommended"</li>
+            <li>Clear ingredient listing</li>
+          </ul>
+
+          <h3>Watch For</h3>
+          <ul class="cross-list">
+            <li>"Fresh scent" without specifying source</li>
+            <li>Vague ingredient descriptions</li>
+            <li>No dust claims at all</li>
+            <li>"Odor control" without explaining how</li>
+            <li>Very long ingredient lists</li>
+          </ul>
+        </div>
+
+        <aside class="content-sidebar">
+          <div class="info-card">
+            <h4>Quality Certifications</h4>
+            <p>Look for these marks of quality:</p>
+            <ul class="cert-list">
+              <li>
+                <span class="cert-list__icon">&#9989;</span>
+                <span>Veterinarian Recommended</span>
+              </li>
+              <li>
+                <span class="cert-list__icon">&#127807;</span>
+                <span>Eco-Certified</span>
+              </li>
+              <li>
+                <span class="cert-list__icon">&#128062;</span>
+                <span>Pet Safe</span>
+              </li>
+              <li>
+                <span class="cert-list__icon">&#127968;</span>
+                <span>Made in USA/Canada</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Premium Ingredients, Premium Results</h2>
+      <p>
+        Purrify combines activated biochar with natural clays for unmatched
+        odor control and clumping performance.
+      </p>
+      <div class="cta-buttons">
+        <a
+          href="https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=ingredients"
+          class="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          Shop Purrify
+        </a>
+        <a
+          href="https://purrify.ca/learn/science?utm_source=premiumcatlitter&utm_medium=ingredients"
+          class="btn btn-secondary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          Our Science
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style lang="scss">
+  @use '../styles/variables' as *;
+  @use '../styles/mixins' as *;
+
+  .page-hero {
+    background: linear-gradient(135deg, $color-cream 0%, $color-champagne 100%);
+    padding: $spacing-16 0 $spacing-20;
+    text-align: center;
+
+    h1 {
+      margin-top: $spacing-6;
+      margin-bottom: $spacing-6;
+    }
+
+    &__subtitle {
+      font-size: $font-size-lg;
+      color: $color-text-secondary;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .ingredients {
+    background: $color-white;
+  }
+
+  .ingredients-grid {
+    display: grid;
+    gap: $spacing-6;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .ingredient-card {
+    background: $color-cream;
+    border-radius: $border-radius-lg;
+    padding: $spacing-8;
+    position: relative;
+
+    &--featured {
+      background: $color-charcoal;
+      color: $color-cream;
+
+      @include md {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: $spacing-8;
+      }
+
+      h3 {
+        color: $color-gold;
+      }
+
+      h4 {
+        color: $color-gold-light;
+      }
+
+      p {
+        color: rgba($color-cream, 0.8);
+      }
+
+      .ingredient-card__details {
+        @include md {
+          grid-column: 2;
+          grid-row: 1 / span 4;
+        }
+      }
+    }
+
+    &__badge {
+      margin-bottom: $spacing-4;
+    }
+
+    &__icon {
+      font-size: 48px;
+      margin-bottom: $spacing-4;
+    }
+
+    h3 {
+      font-size: $font-size-xl;
+      margin-bottom: $spacing-3;
+    }
+
+    &__intro {
+      font-size: $font-size-md;
+      margin-bottom: $spacing-6;
+    }
+
+    &__details {
+      h4 {
+        font-family: $font-body;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: $spacing-3;
+        margin-top: $spacing-5;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      p {
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-3;
+      }
+
+      ul {
+        font-size: $font-size-sm;
+
+        li {
+          padding-left: $spacing-5;
+          position: relative;
+          margin-bottom: $spacing-2;
+
+          &::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: $color-gold;
+          }
+        }
+      }
+    }
+
+    .btn {
+      margin-top: $spacing-6;
+    }
+  }
+
+  .avoid {
+    background: $color-ivory;
+  }
+
+  .section-header {
+    margin-bottom: $spacing-12;
+
+    h2 {
+      margin-bottom: $spacing-4;
+    }
+  }
+
+  .section-subtitle {
+    font-size: $font-size-lg;
+    color: $color-text-secondary;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .avoid-grid {
+    display: grid;
+    gap: $spacing-6;
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .avoid-card {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    padding: $spacing-6;
+    border-left: 4px solid #E57373;
+
+    &__icon {
+      font-size: 24px;
+      margin-bottom: $spacing-3;
+    }
+
+    h4 {
+      font-size: $font-size-md;
+      margin-bottom: $spacing-3;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $color-text-secondary;
+      margin: 0;
+    }
+  }
+
+  .labels {
+    background: $color-cream;
+  }
+
+  .content-grid {
+    display: grid;
+    gap: $spacing-12;
+
+    @include lg {
+      grid-template-columns: 1.5fr 1fr;
+      gap: $spacing-16;
+    }
+  }
+
+  .content-main {
+    h2 {
+      margin-bottom: $spacing-4;
+    }
+
+    h3 {
+      margin-top: $spacing-8;
+      margin-bottom: $spacing-4;
+      font-size: $font-size-lg;
+      color: $color-gold-dark;
+    }
+
+    > p {
+      font-size: $font-size-md;
+    }
+  }
+
+  .check-list, .cross-list {
+    li {
+      padding-left: $spacing-6;
+      position: relative;
+      margin-bottom: $spacing-3;
+      font-size: $font-size-md;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        font-size: $font-size-base;
+      }
+    }
+  }
+
+  .check-list li::before {
+    content: '✓';
+    color: $color-gold;
+  }
+
+  .cross-list li::before {
+    content: '✗';
+    color: #E57373;
+  }
+
+  .content-sidebar {
+    @include lg {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+  }
+
+  .info-card {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    padding: $spacing-6;
+    box-shadow: $shadow-md;
+
+    h4 {
+      font-size: $font-size-lg;
+      margin-bottom: $spacing-3;
+    }
+
+    > p {
+      font-size: $font-size-sm;
+      color: $color-text-secondary;
+      margin-bottom: $spacing-4;
+    }
+  }
+
+  .cert-list {
+    li {
+      display: flex;
+      align-items: center;
+      gap: $spacing-3;
+      padding: $spacing-3 0;
+      border-bottom: 1px solid rgba($color-charcoal, 0.1);
+      font-size: $font-size-sm;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__icon {
+      font-size: $font-size-lg;
+    }
+  }
+
+  .cta-section {
+    background: $color-charcoal;
+    padding: $spacing-16 0;
+    text-align: center;
+
+    h2 {
+      color: $color-cream;
+      margin-bottom: $spacing-4;
+    }
+
+    p {
+      color: rgba($color-cream, 0.8);
+      font-size: $font-size-lg;
+      max-width: 600px;
+      margin: 0 auto $spacing-8;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    justify-content: center;
+  }
+</style>

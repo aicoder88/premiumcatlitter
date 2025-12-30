@@ -1,0 +1,63 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.card {
+  @include card;
+  padding: $spacing-8;
+  text-align: center;
+  transition: all $transition-elegant;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+  }
+}
+
+.highlight {
+  background: $color-charcoal;
+
+  .title {
+    color: $color-cream;
+  }
+
+  .description {
+    color: rgba($color-cream, 0.8);
+  }
+
+  .icon {
+    background: linear-gradient(135deg, $color-gold, $color-gold-light);
+    color: $color-charcoal;
+  }
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto $spacing-5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  background: rgba($color-gold, 0.1);
+  border-radius: $border-radius-full;
+  transition: transform $transition-base;
+
+  .card:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.title {
+  font-family: $font-heading;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  margin-bottom: $spacing-3;
+}
+
+.description {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  line-height: $line-height-relaxed;
+  margin: 0;
+}

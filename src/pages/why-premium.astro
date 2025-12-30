@@ -1,0 +1,507 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PremiumBadge from '../components/PremiumBadge';
+---
+
+<Layout
+  title="Why Premium Cat Litter Matters"
+  description="Discover the science behind premium cat litter. Learn why quality ingredients, superior formulations, and advanced technology make a real difference for your cat's health and comfort."
+>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <PremiumBadge client:load variant="gold">The Premium Promise</PremiumBadge>
+      <h1>Why Premium<br /><span class="gradient-text">Makes the Difference</span></h1>
+      <p class="page-hero__subtitle">
+        The choice between standard and premium litter isn't about luxury—it's about
+        your cat's health, comfort, and your peace of mind.
+      </p>
+    </div>
+  </section>
+
+  <!-- Science Section -->
+  <section class="science section">
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-main">
+          <h2>The Science of Superior Litter</h2>
+          <p>
+            Premium cat litter isn't just marketing—it's material science at work. The difference
+            lies in carefully selected ingredients, advanced manufacturing processes, and rigorous
+            quality control that budget brands simply can't match.
+          </p>
+          <p>
+            When you invest in premium litter, you're investing in technology developed specifically
+            to address the unique challenges of odor control, moisture management, and feline comfort.
+          </p>
+
+          <h3>Molecular Odor Control</h3>
+          <p>
+            Standard litters mask odors with perfumes. Premium formulations attack odor at the
+            molecular level using activated charcoal, natural zeolites, and enzymatic compounds
+            that break down ammonia and other volatile compounds before they can reach your nose.
+          </p>
+
+          <h3>Superior Clumping Technology</h3>
+          <p>
+            The clumping action in premium litters happens faster and forms tighter bonds. This
+            means less litter sticks to your scoop, the litter box stays cleaner between changes,
+            and you use less product overall—making premium options more economical than they first appear.
+          </p>
+
+          <h3>Dust-Free Formulations</h3>
+          <p>
+            Airborne dust is a respiratory concern for both cats and humans. Premium litters undergo
+            additional processing to remove fine particles, resulting in 99% dust-free products that
+            are gentler on sensitive respiratory systems.
+          </p>
+        </div>
+
+        <aside class="content-sidebar">
+          <div class="info-card">
+            <div class="info-card__icon">&#128200;</div>
+            <h4>By The Numbers</h4>
+            <ul class="stats-list">
+              <li>
+                <span class="stats-list__value">94%</span>
+                <span class="stats-list__label">better odor neutralization</span>
+              </li>
+              <li>
+                <span class="stats-list__value">3x</span>
+                <span class="stats-list__label">longer between changes</span>
+              </li>
+              <li>
+                <span class="stats-list__value">99%</span>
+                <span class="stats-list__label">dust-free formula</span>
+              </li>
+              <li>
+                <span class="stats-list__value">40%</span>
+                <span class="stats-list__label">less tracking</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Benefits -->
+  <section class="health section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Health Benefits for Your Cat</h2>
+        <p class="section-subtitle">
+          Premium litter isn't just about convenience—it's about creating a healthier
+          environment for your feline companion.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-card__icon">&#128576;</div>
+          <h3>Respiratory Health</h3>
+          <p>
+            Dust-free formulas protect sensitive airways. Essential for kittens,
+            seniors, and cats with asthma or allergies.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__icon">&#128062;</div>
+          <h3>Paw Comfort</h3>
+          <p>
+            Softer, finer granules are gentler on paw pads. Especially important
+            after declawing or for cats with sensitive feet.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__icon">&#128150;</div>
+          <h3>Stress Reduction</h3>
+          <p>
+            A cleaner, fresher litter box encourages regular use, preventing
+            stress-related elimination issues and UTIs.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__icon">&#127807;</div>
+          <h3>Natural Ingredients</h3>
+          <p>
+            Premium brands avoid artificial fragrances and chemicals that can
+            irritate sensitive cats or cause allergic reactions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cost Analysis -->
+  <section class="cost section">
+    <div class="container">
+      <div class="cost__content">
+        <h2>The True Cost of Premium</h2>
+        <p>
+          While premium litter has a higher upfront cost per bag, the math often
+          works out in your favor:
+        </p>
+
+        <div class="cost-comparison">
+          <div class="cost-item">
+            <h4>Standard Litter</h4>
+            <div class="cost-item__details">
+              <div class="cost-item__row">
+                <span>Price per bag</span>
+                <span>$8-12</span>
+              </div>
+              <div class="cost-item__row">
+                <span>Lasts approximately</span>
+                <span>1-2 weeks</span>
+              </div>
+              <div class="cost-item__row">
+                <span>Monthly cost</span>
+                <span>$16-48</span>
+              </div>
+              <div class="cost-item__row cost-item__row--total">
+                <span>Annual cost</span>
+                <span>$192-576</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cost-item cost-item--premium">
+            <h4>Premium Litter</h4>
+            <div class="cost-item__details">
+              <div class="cost-item__row">
+                <span>Price per bag</span>
+                <span>$18-28</span>
+              </div>
+              <div class="cost-item__row">
+                <span>Lasts approximately</span>
+                <span>3-5 weeks</span>
+              </div>
+              <div class="cost-item__row">
+                <span>Monthly cost</span>
+                <span>$15-37</span>
+              </div>
+              <div class="cost-item__row cost-item__row--total">
+                <span>Annual cost</span>
+                <span>$180-444</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="cost__note">
+          <strong>Plus:</strong> Fewer vet visits from respiratory issues, less cleaning time,
+          and a more pleasant home environment. The value extends far beyond the price tag.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Experience Premium?</h2>
+      <p>
+        Discover Purrify—the ultimate in premium cat litter innovation with biochar-powered
+        odor control and eco-conscious ingredients.
+      </p>
+      <div class="cta-buttons">
+        <a
+          href="https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=why-premium"
+          class="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          Shop Purrify
+        </a>
+        <a href="/comparison" class="btn btn-secondary btn-lg">
+          Compare Options
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style lang="scss">
+  @use '../styles/variables' as *;
+  @use '../styles/mixins' as *;
+
+  .page-hero {
+    background: linear-gradient(135deg, $color-cream 0%, $color-champagne 100%);
+    padding: $spacing-16 0 $spacing-20;
+    text-align: center;
+
+    @include lg {
+      padding: $spacing-20 0 $spacing-24;
+    }
+
+    h1 {
+      margin-top: $spacing-6;
+      margin-bottom: $spacing-6;
+    }
+
+    &__subtitle {
+      font-size: $font-size-lg;
+      color: $color-text-secondary;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .content-grid {
+    display: grid;
+    gap: $spacing-12;
+
+    @include lg {
+      grid-template-columns: 2fr 1fr;
+      gap: $spacing-16;
+    }
+  }
+
+  .content-main {
+    h2 {
+      margin-bottom: $spacing-6;
+    }
+
+    h3 {
+      margin-top: $spacing-10;
+      margin-bottom: $spacing-4;
+      color: $color-gold-dark;
+    }
+
+    p {
+      font-size: $font-size-md;
+      line-height: $line-height-relaxed;
+    }
+  }
+
+  .content-sidebar {
+    @include lg {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+  }
+
+  .info-card {
+    background: $color-charcoal;
+    border-radius: $border-radius-lg;
+    padding: $spacing-8;
+    color: $color-cream;
+
+    &__icon {
+      font-size: 32px;
+      margin-bottom: $spacing-4;
+    }
+
+    h4 {
+      color: $color-gold;
+      margin-bottom: $spacing-6;
+    }
+  }
+
+  .stats-list {
+    @include flex-column;
+    gap: $spacing-4;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: $spacing-4;
+      border-bottom: 1px solid rgba($color-gold, 0.2);
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    &__value {
+      font-family: $font-heading;
+      font-size: $font-size-2xl;
+      font-weight: $font-weight-bold;
+      color: $color-gold;
+    }
+
+    &__label {
+      font-size: $font-size-sm;
+      color: rgba($color-cream, 0.7);
+    }
+  }
+
+  .health {
+    background: $color-ivory;
+  }
+
+  .section-header {
+    margin-bottom: $spacing-12;
+
+    h2 {
+      margin-bottom: $spacing-4;
+    }
+  }
+
+  .section-subtitle {
+    font-size: $font-size-lg;
+    color: $color-text-secondary;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .benefits-grid {
+    display: grid;
+    gap: $spacing-6;
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .benefit-card {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    padding: $spacing-6;
+    text-align: center;
+    box-shadow: $shadow-md;
+    transition: all $transition-base;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: $shadow-lg;
+    }
+
+    &__icon {
+      font-size: 40px;
+      margin-bottom: $spacing-4;
+    }
+
+    h3 {
+      font-size: $font-size-lg;
+      margin-bottom: $spacing-3;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $color-text-secondary;
+      margin: 0;
+    }
+  }
+
+  .cost {
+    background: $color-cream;
+
+    &__content {
+      max-width: 900px;
+      margin: 0 auto;
+
+      h2 {
+        text-align: center;
+        margin-bottom: $spacing-4;
+      }
+
+      > p {
+        text-align: center;
+        font-size: $font-size-lg;
+        margin-bottom: $spacing-10;
+      }
+    }
+
+    &__note {
+      text-align: center;
+      font-size: $font-size-md;
+      color: $color-text-secondary;
+      margin-top: $spacing-8;
+    }
+  }
+
+  .cost-comparison {
+    display: grid;
+    gap: $spacing-6;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .cost-item {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-md;
+
+    h4 {
+      padding: $spacing-5;
+      text-align: center;
+      background: $color-slate;
+      color: $color-cream;
+      margin: 0;
+    }
+
+    &--premium {
+      box-shadow: $shadow-gold;
+
+      h4 {
+        background: linear-gradient(135deg, $color-gold, $color-gold-dark);
+        color: $color-charcoal;
+      }
+    }
+
+    &__details {
+      padding: $spacing-5;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      padding: $spacing-3 0;
+      border-bottom: 1px solid rgba($color-charcoal, 0.1);
+      font-size: $font-size-sm;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &--total {
+        font-weight: $font-weight-bold;
+        font-size: $font-size-md;
+        color: $color-charcoal;
+        padding-top: $spacing-4;
+        margin-top: $spacing-2;
+        border-top: 2px solid $color-gold;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .cta-section {
+    background: $color-charcoal;
+    padding: $spacing-16 0;
+    text-align: center;
+
+    h2 {
+      color: $color-cream;
+      margin-bottom: $spacing-4;
+    }
+
+    p {
+      color: rgba($color-cream, 0.8);
+      font-size: $font-size-lg;
+      max-width: 600px;
+      margin: 0 auto $spacing-8;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    justify-content: center;
+  }
+</style>

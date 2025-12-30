@@ -1,0 +1,625 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeatureCard from '../components/FeatureCard';
+import PremiumBadge from '../components/PremiumBadge';
+---
+
+<Layout
+  title="Home"
+  description="Discover why premium cat litter transforms your cat's experience. Expert guidance on choosing superior litter for exceptional odor control, clumping, and feline health."
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <PremiumBadge client:load variant="gold" size="lg">The Luxury Standard</PremiumBadge>
+        <h1 class="hero__title">
+          Your Cat Deserves<br />
+          <span class="gradient-text">Premium Excellence</span>
+        </h1>
+        <p class="hero__subtitle">
+          Not all litter is created equal. Discover why discerning cat owners choose
+          premium quality for superior odor control, gentle ingredients, and an elevated
+          experience for their beloved companions.
+        </p>
+        <div class="hero__cta">
+          <a href="/why-premium" class="btn btn-primary btn-lg">
+            Discover Premium
+          </a>
+          <a href="/comparison" class="btn btn-secondary btn-lg">
+            Compare Options
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-wrapper">
+          <div class="hero__accent"></div>
+          <div class="hero__placeholder">
+            <span class="hero__placeholder-icon">&#128049;</span>
+            <span class="hero__placeholder-text">Premium Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Premium Section -->
+  <section class="why-premium section">
+    <div class="container">
+      <div class="section-header text-center">
+        <PremiumBadge client:load variant="outline">Why It Matters</PremiumBadge>
+        <h2>The Premium Difference</h2>
+        <p class="section-subtitle">
+          Standard litter leaves much to be desired. Premium options deliver
+          exceptional performance your cat will notice.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <FeatureCard
+          client:load
+          icon="&#10024;"
+          title="Superior Odor Control"
+          description="Advanced formulas with activated charcoal and natural enzymes neutralize odors at the molecular level, not just mask them."
+        />
+        <FeatureCard
+          client:load
+          icon="&#128170;"
+          title="Instant Clumping"
+          description="Premium clays form tight, easy-to-scoop clumps instantly, making maintenance effortless and keeping the box fresh."
+          highlight={true}
+        />
+        <FeatureCard
+          client:load
+          icon="&#127793;"
+          title="Gentle Ingredients"
+          description="Natural, dust-free formulations are safer for sensitive paws and respiratory systems, especially for kittens and seniors."
+        />
+        <FeatureCard
+          client:load
+          icon="&#9203;"
+          title="Longer Lasting"
+          description="Higher quality materials mean less frequent changes, better absorption, and ultimately more value for your investment."
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat">
+          <span class="stat__number">94%</span>
+          <span class="stat__label">Better Odor Control</span>
+          <span class="stat__detail">vs. standard clay litter</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">3x</span>
+          <span class="stat__label">Longer Lasting</span>
+          <span class="stat__detail">between complete changes</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">99%</span>
+          <span class="stat__label">Dust-Free Formula</span>
+          <span class="stat__detail">for healthier breathing</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">5&#9733;</span>
+          <span class="stat__label">Cat Approved</span>
+          <span class="stat__detail">preferred by felines everywhere</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Teaser -->
+  <section class="comparison-teaser section">
+    <div class="container">
+      <div class="comparison-teaser__content">
+        <h2>Standard vs. Premium</h2>
+        <p>
+          See exactly how premium litter outperforms budget options in odor control,
+          clumping, dust levels, and overall value.
+        </p>
+        <a href="/comparison" class="btn btn-primary">
+          View Full Comparison
+        </a>
+      </div>
+      <div class="comparison-teaser__preview">
+        <div class="comparison-item">
+          <div class="comparison-item__header comparison-item__header--standard">
+            Standard Litter
+          </div>
+          <ul class="comparison-item__list">
+            <li class="comparison-item__point comparison-item__point--negative">Basic odor masking</li>
+            <li class="comparison-item__point comparison-item__point--negative">Slow, crumbly clumps</li>
+            <li class="comparison-item__point comparison-item__point--negative">Dusty formula</li>
+            <li class="comparison-item__point comparison-item__point--negative">Weekly changes needed</li>
+          </ul>
+        </div>
+        <div class="comparison-item comparison-item--premium">
+          <div class="comparison-item__header comparison-item__header--premium">
+            Premium Litter
+          </div>
+          <ul class="comparison-item__list">
+            <li class="comparison-item__point comparison-item__point--positive">Molecular odor elimination</li>
+            <li class="comparison-item__point comparison-item__point--positive">Instant solid clumps</li>
+            <li class="comparison-item__point comparison-item__point--positive">99% dust-free</li>
+            <li class="comparison-item__point comparison-item__point--positive">Lasts 2-3x longer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Purrify CTA -->
+  <section class="purrify-cta">
+    <div class="container">
+      <div class="purrify-cta__content">
+        <PremiumBadge client:load variant="dark" size="md">Recommended</PremiumBadge>
+        <h2>Experience Purrify</h2>
+        <p>
+          The ultimate in premium cat litter innovation. Biochar-powered odor elimination,
+          luxuriously soft texture, and eco-conscious ingredients your cat will love.
+        </p>
+        <div class="purrify-cta__buttons">
+          <a
+            href="https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=homepage-cta"
+            class="btn btn-primary btn-lg"
+            target="_blank"
+            rel="noopener"
+          >
+            Shop Now
+          </a>
+          <a
+            href="https://purrify.ca/learn/how-it-works?utm_source=premiumcatlitter&utm_medium=homepage-cta"
+            class="btn btn-secondary btn-lg"
+            target="_blank"
+            rel="noopener"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide Teaser -->
+  <section class="guide-teaser section">
+    <div class="container">
+      <div class="guide-teaser__grid">
+        <div class="guide-teaser__content">
+          <h2>Your Complete Buying Guide</h2>
+          <p>
+            Choosing premium litter doesn't have to be complicated. Our expert guide
+            walks you through everything you need to know to make the perfect choice
+            for your cat.
+          </p>
+          <ul class="guide-teaser__list">
+            <li>Understanding ingredient quality</li>
+            <li>Matching litter types to your cat's needs</li>
+            <li>Multi-cat household considerations</li>
+            <li>Budget optimization tips</li>
+          </ul>
+          <a href="/guide" class="btn btn-dark">
+            Read the Guide
+          </a>
+        </div>
+        <div class="guide-teaser__visual">
+          <div class="guide-card">
+            <span class="guide-card__icon">&#128218;</span>
+            <span class="guide-card__title">Expert Insights</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style lang="scss">
+  @use '../styles/variables' as *;
+  @use '../styles/mixins' as *;
+
+  // Hero Section
+  .hero {
+    background: linear-gradient(135deg, $color-cream 0%, $color-champagne 100%);
+    padding: $spacing-16 0 $spacing-20;
+    overflow: hidden;
+
+    @include lg {
+      padding: $spacing-24 0 $spacing-32;
+    }
+
+    &__container {
+      @include container;
+      display: grid;
+      gap: $spacing-12;
+      align-items: center;
+
+      @include lg {
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-16;
+      }
+    }
+
+    &__content {
+      text-align: center;
+
+      @include lg {
+        text-align: left;
+      }
+    }
+
+    &__title {
+      margin-top: $spacing-6;
+      margin-bottom: $spacing-6;
+    }
+
+    &__subtitle {
+      font-size: $font-size-lg;
+      color: $color-text-secondary;
+      max-width: 540px;
+      margin: 0 auto $spacing-8;
+
+      @include lg {
+        margin: 0 0 $spacing-8;
+      }
+    }
+
+    &__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-4;
+      justify-content: center;
+
+      @include lg {
+        justify-content: flex-start;
+      }
+    }
+
+    &__visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    &__accent {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, $color-gold, $color-gold-light);
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    &__placeholder {
+      aspect-ratio: 4/3;
+      background: $color-white;
+      border-radius: $border-radius-xl;
+      box-shadow: $shadow-xl;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-4;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__placeholder-icon {
+      font-size: 64px;
+    }
+
+    &__placeholder-text {
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      color: $color-gold;
+    }
+  }
+
+  // Section Header
+  .section-header {
+    margin-bottom: $spacing-12;
+
+    h2 {
+      margin-top: $spacing-4;
+      margin-bottom: $spacing-4;
+    }
+  }
+
+  .section-subtitle {
+    font-size: $font-size-lg;
+    color: $color-text-secondary;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  // Features Grid
+  .features-grid {
+    display: grid;
+    gap: $spacing-6;
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  // Stats Section
+  .stats {
+    background: $color-charcoal;
+    padding: $spacing-12 0;
+
+    @include md {
+      padding: $spacing-16 0;
+    }
+
+    &__grid {
+      display: grid;
+      gap: $spacing-8;
+
+      @include sm {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+
+  .stat {
+    text-align: center;
+    color: $color-cream;
+
+    &__number {
+      display: block;
+      font-family: $font-heading;
+      font-size: $font-size-4xl;
+      font-weight: $font-weight-bold;
+      color: $color-gold;
+      line-height: 1;
+      margin-bottom: $spacing-2;
+
+      @include md {
+        font-size: $font-size-5xl;
+      }
+    }
+
+    &__label {
+      display: block;
+      font-size: $font-size-md;
+      font-weight: $font-weight-semibold;
+      margin-bottom: $spacing-1;
+    }
+
+    &__detail {
+      font-size: $font-size-sm;
+      color: rgba($color-cream, 0.6);
+    }
+  }
+
+  // Comparison Teaser
+  .comparison-teaser {
+    background: $color-cream;
+
+    .container {
+      display: grid;
+      gap: $spacing-10;
+      align-items: center;
+
+      @include lg {
+        grid-template-columns: 1fr 1.2fr;
+        gap: $spacing-16;
+      }
+    }
+
+    &__content {
+      text-align: center;
+
+      @include lg {
+        text-align: left;
+      }
+
+      h2 {
+        margin-bottom: $spacing-4;
+      }
+
+      p {
+        margin-bottom: $spacing-6;
+      }
+    }
+
+    &__preview {
+      display: grid;
+      gap: $spacing-4;
+
+      @include sm {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .comparison-item {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-md;
+
+    &--premium {
+      box-shadow: $shadow-gold;
+    }
+
+    &__header {
+      padding: $spacing-4;
+      text-align: center;
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-sm;
+
+      &--standard {
+        background: $color-slate;
+        color: $color-cream;
+      }
+
+      &--premium {
+        background: linear-gradient(135deg, $color-gold, $color-gold-dark);
+        color: $color-charcoal;
+      }
+    }
+
+    &__list {
+      padding: $spacing-5;
+    }
+
+    &__point {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+      font-size: $font-size-sm;
+      padding: $spacing-2 0;
+
+      &::before {
+        font-size: $font-size-base;
+      }
+
+      &--positive::before {
+        content: '✓';
+        color: $color-gold;
+      }
+
+      &--negative::before {
+        content: '✗';
+        color: $color-text-muted;
+      }
+    }
+  }
+
+  // Purrify CTA
+  .purrify-cta {
+    background: linear-gradient(135deg, $color-charcoal 0%, $color-charcoal-light 100%);
+    padding: $spacing-16 0;
+
+    @include md {
+      padding: $spacing-20 0;
+    }
+
+    &__content {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+
+      h2 {
+        color: $color-cream;
+        margin-top: $spacing-5;
+        margin-bottom: $spacing-4;
+      }
+
+      p {
+        color: rgba($color-cream, 0.8);
+        font-size: $font-size-lg;
+        margin-bottom: $spacing-8;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-4;
+      justify-content: center;
+    }
+  }
+
+  // Guide Teaser
+  .guide-teaser {
+    background: $color-ivory;
+
+    &__grid {
+      display: grid;
+      gap: $spacing-10;
+      align-items: center;
+
+      @include lg {
+        grid-template-columns: 1.2fr 1fr;
+        gap: $spacing-16;
+      }
+    }
+
+    &__content {
+      h2 {
+        margin-bottom: $spacing-4;
+      }
+
+      p {
+        margin-bottom: $spacing-6;
+      }
+    }
+
+    &__list {
+      margin-bottom: $spacing-8;
+
+      li {
+        position: relative;
+        padding-left: $spacing-6;
+        margin-bottom: $spacing-3;
+        color: $color-text-secondary;
+
+        &::before {
+          content: '◆';
+          position: absolute;
+          left: 0;
+          color: $color-gold;
+          font-size: $font-size-xs;
+        }
+      }
+    }
+
+    &__visual {
+      display: flex;
+      justify-content: center;
+
+      @include lg {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .guide-card {
+    width: 200px;
+    height: 200px;
+    background: $color-white;
+    border-radius: $border-radius-xl;
+    box-shadow: $shadow-lg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-4;
+    transition: transform $transition-base;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__icon {
+      font-size: 48px;
+    }
+
+    &__title {
+      font-family: $font-heading;
+      font-size: $font-size-md;
+      color: $color-gold;
+    }
+  }
+</style>

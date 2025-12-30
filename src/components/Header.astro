@@ -1,0 +1,257 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '/' } = Astro.props;
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/why-premium', label: 'Why Premium' },
+  { href: '/comparison', label: 'Compare Options' },
+  { href: '/ingredients', label: 'Ingredients' },
+  { href: '/guide', label: 'Buying Guide' },
+];
+
+const isActive = (href: string) => {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+};
+---
+
+<header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo">
+      <span class="header__logo-icon">&#9830;</span>
+      <span class="header__logo-text">Premium Cat Litter</span>
+    </a>
+
+    <nav class="header__nav" id="main-nav">
+      <ul class="header__nav-list">
+        {navLinks.map((link) => (
+          <li class="header__nav-item">
+            <a
+              href={link.href}
+              class:list={['header__nav-link', { 'is-active': isActive(link.href) }]}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <a href="https://purrify.ca/?utm_source=premiumcatlitter&utm_medium=header" class="header__cta btn btn-primary btn-sm" target="_blank" rel="noopener">
+      Shop Purrify
+    </a>
+
+    <button class="header__mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="header__mobile-toggle-bar"></span>
+      <span class="header__mobile-toggle-bar"></span>
+      <span class="header__mobile-toggle-bar"></span>
+    </button>
+  </div>
+
+  <nav class="header__mobile-nav" id="mobile-nav">
+    <ul class="header__mobile-list">
+      {navLinks.map((link) => (
+        <li class="header__mobile-item">
+          <a
+            href={link.href}
+            class:list={['header__mobile-link', { 'is-active': isActive(link.href) }]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li class="header__mobile-item">
+        <a href="https://purrify.ca/?utm_source=premiumcatlitter&utm_medium=mobile-header" class="btn btn-primary" target="_blank" rel="noopener">
+          Shop Purrify
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style lang="scss">
+  @use '../styles/variables' as *;
+  @use '../styles/mixins' as *;
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: $z-sticky;
+    background: rgba($color-cream, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba($color-gold, 0.1);
+
+    &__container {
+      @include container;
+      @include flex-between;
+      height: 72px;
+
+      @include lg {
+        height: 80px;
+      }
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+      text-decoration: none;
+      color: $color-text-primary;
+    }
+
+    &__logo-icon {
+      color: $color-gold;
+      font-size: $font-size-xl;
+    }
+
+    &__logo-text {
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      font-weight: $font-weight-semibold;
+
+      @include md {
+        font-size: $font-size-xl;
+      }
+    }
+
+    &__nav {
+      display: none;
+
+      @include lg {
+        display: block;
+      }
+    }
+
+    &__nav-list {
+      display: flex;
+      align-items: center;
+      gap: $spacing-8;
+    }
+
+    &__nav-link {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-medium;
+      color: $color-text-secondary;
+      text-decoration: none;
+      padding: $spacing-2 0;
+      position: relative;
+      transition: color $transition-fast;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $color-gold;
+        transition: width $transition-base;
+      }
+
+      &:hover,
+      &.is-active {
+        color: $color-gold;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &__cta {
+      display: none;
+
+      @include lg {
+        display: inline-flex;
+      }
+    }
+
+    &__mobile-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 32px;
+      height: 32px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    &__mobile-toggle-bar {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: $color-charcoal;
+      border-radius: $border-radius-full;
+      transition: all $transition-fast;
+    }
+
+    &__mobile-toggle[aria-expanded="true"] {
+      .header__mobile-toggle-bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .header__mobile-toggle-bar:nth-child(2) {
+        opacity: 0;
+      }
+      .header__mobile-toggle-bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+
+    &__mobile-nav {
+      display: none;
+      background: $color-cream;
+      border-top: 1px solid rgba($color-gold, 0.1);
+      padding: $spacing-6;
+
+      &.is-open {
+        display: block;
+      }
+
+      @include lg {
+        display: none !important;
+      }
+    }
+
+    &__mobile-list {
+      @include flex-column;
+      gap: $spacing-4;
+    }
+
+    &__mobile-link {
+      display: block;
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
+      color: $color-text-secondary;
+      padding: $spacing-3 0;
+      border-bottom: 1px solid rgba($color-gold, 0.1);
+      transition: color $transition-fast;
+
+      &:hover,
+      &.is-active {
+        color: $color-gold;
+      }
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', (!isOpen).toString());
+    mobileNav?.classList.toggle('is-open');
+  });
+</script>

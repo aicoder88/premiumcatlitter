@@ -1,0 +1,642 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PremiumBadge from '../components/PremiumBadge';
+---
+
+<Layout
+  title="Cat Litter Comparison Guide"
+  description="Compare premium vs standard cat litter across odor control, clumping, dust levels, and value. Make an informed decision for your cat's health and comfort."
+>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <PremiumBadge client:load variant="gold">Detailed Analysis</PremiumBadge>
+      <h1>Premium vs Standard<br /><span class="gradient-text">The Complete Comparison</span></h1>
+      <p class="page-hero__subtitle">
+        An honest, detailed breakdown of how premium litter stacks up against
+        budget options across every metric that matters.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Comparison Table -->
+  <section class="comparison section">
+    <div class="container">
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Budget Litter</th>
+              <th>Mid-Range Litter</th>
+              <th class="highlight">Premium Litter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">
+                <strong>Odor Control</strong>
+                <span class="feature-desc">How effectively odors are neutralized</span>
+              </td>
+              <td class="rating rating--poor">
+                <span class="rating-score">2/5</span>
+                <span class="rating-text">Basic masking only</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">Improved control</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">5/5</span>
+                <span class="rating-text">Molecular elimination</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="feature-name">
+                <strong>Clumping Speed</strong>
+                <span class="feature-desc">Time to form solid clumps</span>
+              </td>
+              <td class="rating rating--poor">
+                <span class="rating-score">2/5</span>
+                <span class="rating-text">30+ seconds, crumbly</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">~15 seconds</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">5/5</span>
+                <span class="rating-text">Instant, rock-solid</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="feature-name">
+                <strong>Dust Level</strong>
+                <span class="feature-desc">Airborne particles when pouring</span>
+              </td>
+              <td class="rating rating--poor">
+                <span class="rating-score">1/5</span>
+                <span class="rating-text">Very dusty</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">Some dust</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">5/5</span>
+                <span class="rating-text">99% dust-free</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="feature-name">
+                <strong>Tracking</strong>
+                <span class="feature-desc">Litter carried outside the box</span>
+              </td>
+              <td class="rating rating--poor">
+                <span class="rating-score">2/5</span>
+                <span class="rating-text">Significant tracking</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">Moderate tracking</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">4/5</span>
+                <span class="rating-text">Minimal tracking</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="feature-name">
+                <strong>Longevity</strong>
+                <span class="feature-desc">Time between complete changes</span>
+              </td>
+              <td class="rating rating--poor">
+                <span class="rating-score">2/5</span>
+                <span class="rating-text">Weekly changes</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">2 weeks</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">5/5</span>
+                <span class="rating-text">3-4 weeks</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="feature-name">
+                <strong>Cat Acceptance</strong>
+                <span class="feature-desc">How readily cats use the litter</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">Generally accepted</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">Well accepted</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">5/5</span>
+                <span class="rating-text">Preferred by cats</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="feature-name">
+                <strong>Ingredient Safety</strong>
+                <span class="feature-desc">Natural, non-toxic materials</span>
+              </td>
+              <td class="rating rating--poor">
+                <span class="rating-score">2/5</span>
+                <span class="rating-text">Basic clay, additives</span>
+              </td>
+              <td class="rating rating--fair">
+                <span class="rating-score">3/5</span>
+                <span class="rating-text">Improved formula</span>
+              </td>
+              <td class="rating rating--excellent highlight">
+                <span class="rating-score">5/5</span>
+                <span class="rating-text">Natural, safe</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Litter Types -->
+  <section class="litter-types section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Premium Litter Types Compared</h2>
+        <p class="section-subtitle">
+          Not all premium litters are the same. Here's how different formulations
+          stack up for various needs.
+        </p>
+      </div>
+
+      <div class="types-grid">
+        <div class="type-card">
+          <div class="type-card__header">
+            <span class="type-card__icon">&#127795;</span>
+            <h3>Wood/Pine Based</h3>
+          </div>
+          <ul class="type-card__pros">
+            <li>Natural odor absorption</li>
+            <li>Biodegradable & flushable</li>
+            <li>Pleasant natural scent</li>
+            <li>Lightweight</li>
+          </ul>
+          <ul class="type-card__cons">
+            <li>May track more</li>
+            <li>Some cats dislike texture</li>
+          </ul>
+          <div class="type-card__best">Best for: Eco-conscious owners</div>
+        </div>
+
+        <div class="type-card type-card--featured">
+          <PremiumBadge client:load variant="gold" size="sm">Recommended</PremiumBadge>
+          <div class="type-card__header">
+            <span class="type-card__icon">&#9899;</span>
+            <h3>Activated Carbon/Biochar</h3>
+          </div>
+          <ul class="type-card__pros">
+            <li>Superior odor elimination</li>
+            <li>Molecular-level control</li>
+            <li>Eco-friendly & sustainable</li>
+            <li>Excellent clumping</li>
+          </ul>
+          <ul class="type-card__cons">
+            <li>Higher price point</li>
+          </ul>
+          <div class="type-card__best">Best for: Maximum odor control</div>
+          <a
+            href="https://purrify.ca/products?utm_source=premiumcatlitter&utm_medium=comparison-types"
+            class="btn btn-primary btn-sm"
+            target="_blank"
+            rel="noopener"
+          >
+            Shop Purrify
+          </a>
+        </div>
+
+        <div class="type-card">
+          <div class="type-card__header">
+            <span class="type-card__icon">&#127805;</span>
+            <h3>Corn/Wheat Based</h3>
+          </div>
+          <ul class="type-card__pros">
+            <li>100% natural ingredients</li>
+            <li>Flushable</li>
+            <li>Soft on paws</li>
+            <li>Good clumping</li>
+          </ul>
+          <ul class="type-card__cons">
+            <li>Can attract bugs</li>
+            <li>Mold risk if damp</li>
+          </ul>
+          <div class="type-card__best">Best for: Sensitive cats</div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-card__header">
+            <span class="type-card__icon">&#129717;</span>
+            <h3>Crystal/Silica Gel</h3>
+          </div>
+          <ul class="type-card__pros">
+            <li>Excellent absorption</li>
+            <li>Very low dust</li>
+            <li>Long lasting</li>
+            <li>Low maintenance</li>
+          </ul>
+          <ul class="type-card__cons">
+            <li>Not biodegradable</li>
+            <li>Some cats avoid texture</li>
+          </ul>
+          <div class="type-card__best">Best for: Busy owners</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Cost Section -->
+  <section class="real-cost section">
+    <div class="container">
+      <div class="real-cost__content">
+        <h2>The Real Cost Calculation</h2>
+        <p>
+          Price per bag doesn't tell the whole story. Here's a fair cost-per-use
+          comparison based on typical usage patterns.
+        </p>
+
+        <div class="cost-calculator">
+          <div class="cost-row cost-row--header">
+            <span>Metric</span>
+            <span>Budget</span>
+            <span>Mid-Range</span>
+            <span class="highlight">Premium</span>
+          </div>
+          <div class="cost-row">
+            <span>Bag Price</span>
+            <span>$10</span>
+            <span>$18</span>
+            <span class="highlight">$28</span>
+          </div>
+          <div class="cost-row">
+            <span>Bag Size</span>
+            <span>20 lb</span>
+            <span>20 lb</span>
+            <span class="highlight">20 lb</span>
+          </div>
+          <div class="cost-row">
+            <span>Days per Bag</span>
+            <span>14</span>
+            <span>21</span>
+            <span class="highlight">35</span>
+          </div>
+          <div class="cost-row">
+            <span>Cost per Day</span>
+            <span>$0.71</span>
+            <span>$0.86</span>
+            <span class="highlight">$0.80</span>
+          </div>
+          <div class="cost-row cost-row--total">
+            <span>Monthly Cost</span>
+            <span>$21.43</span>
+            <span>$25.71</span>
+            <span class="highlight">$24.00</span>
+          </div>
+        </div>
+
+        <p class="cost-note">
+          When you factor in longevity, premium litter is often comparable or even
+          cheaper than budget options—with dramatically better performance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Experience the Premium Difference</h2>
+      <p>
+        Try Purrify's biochar-powered formula and see why cat owners are making the switch.
+      </p>
+      <div class="cta-buttons">
+        <a
+          href="https://purrify.ca/products/trial-size?utm_source=premiumcatlitter&utm_medium=comparison-cta"
+          class="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          Try a Sample
+        </a>
+        <a
+          href="https://purrify.ca/learn/how-it-works?utm_source=premiumcatlitter&utm_medium=comparison-cta"
+          class="btn btn-secondary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          Learn How It Works
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style lang="scss">
+  @use '../styles/variables' as *;
+  @use '../styles/mixins' as *;
+
+  .page-hero {
+    background: linear-gradient(135deg, $color-cream 0%, $color-champagne 100%);
+    padding: $spacing-16 0 $spacing-20;
+    text-align: center;
+
+    h1 {
+      margin-top: $spacing-6;
+      margin-bottom: $spacing-6;
+    }
+
+    &__subtitle {
+      font-size: $font-size-lg;
+      color: $color-text-secondary;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .comparison {
+    background: $color-white;
+    overflow-x: auto;
+  }
+
+  .comparison-table-wrapper {
+    overflow-x: auto;
+    margin: 0 (-$spacing-6);
+    padding: 0 $spacing-6;
+  }
+
+  .comparison-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+
+    th, td {
+      padding: $spacing-4 $spacing-5;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    thead th {
+      background: $color-charcoal;
+      color: $color-cream;
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-sm;
+
+      &.highlight {
+        background: linear-gradient(135deg, $color-gold, $color-gold-dark);
+        color: $color-charcoal;
+      }
+    }
+
+    tbody tr {
+      border-bottom: 1px solid rgba($color-charcoal, 0.1);
+
+      &:hover {
+        background: rgba($color-gold, 0.05);
+      }
+    }
+
+    td.highlight {
+      background: rgba($color-gold, 0.08);
+    }
+  }
+
+  .feature-name {
+    strong {
+      display: block;
+      font-size: $font-size-base;
+      margin-bottom: $spacing-1;
+    }
+  }
+
+  .feature-desc {
+    font-size: $font-size-xs;
+    color: $color-text-muted;
+  }
+
+  .rating {
+    &-score {
+      display: block;
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      font-weight: $font-weight-bold;
+      margin-bottom: $spacing-1;
+    }
+
+    &-text {
+      font-size: $font-size-xs;
+      color: $color-text-secondary;
+    }
+
+    &--poor .rating-score { color: $color-text-muted; }
+    &--fair .rating-score { color: $color-text-secondary; }
+    &--excellent .rating-score { color: $color-gold; }
+  }
+
+  .litter-types {
+    background: $color-cream;
+  }
+
+  .section-header {
+    margin-bottom: $spacing-12;
+
+    h2 {
+      margin-bottom: $spacing-4;
+    }
+  }
+
+  .section-subtitle {
+    font-size: $font-size-lg;
+    color: $color-text-secondary;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .types-grid {
+    display: grid;
+    gap: $spacing-6;
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .type-card {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    padding: $spacing-6;
+    box-shadow: $shadow-md;
+    display: flex;
+    flex-direction: column;
+
+    &--featured {
+      border: 2px solid $color-gold;
+      box-shadow: $shadow-gold;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: $spacing-3;
+      margin-bottom: $spacing-5;
+    }
+
+    &__icon {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: $font-size-md;
+      margin: 0;
+    }
+
+    &__pros, &__cons {
+      font-size: $font-size-sm;
+      margin-bottom: $spacing-4;
+
+      li {
+        padding-left: $spacing-5;
+        position: relative;
+        margin-bottom: $spacing-2;
+
+        &::before {
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+
+    &__pros li::before {
+      content: '✓';
+      color: $color-gold;
+    }
+
+    &__cons li::before {
+      content: '–';
+      color: $color-text-muted;
+    }
+
+    &__best {
+      margin-top: auto;
+      padding-top: $spacing-4;
+      border-top: 1px solid rgba($color-charcoal, 0.1);
+      font-size: $font-size-sm;
+      font-weight: $font-weight-medium;
+      color: $color-gold-dark;
+    }
+
+    .btn {
+      margin-top: $spacing-4;
+    }
+  }
+
+  .real-cost {
+    background: $color-ivory;
+
+    &__content {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h2 {
+        text-align: center;
+        margin-bottom: $spacing-4;
+      }
+
+      > p {
+        text-align: center;
+        font-size: $font-size-lg;
+        margin-bottom: $spacing-10;
+      }
+    }
+  }
+
+  .cost-calculator {
+    background: $color-white;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-md;
+  }
+
+  .cost-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: $spacing-4;
+    font-size: $font-size-sm;
+    border-bottom: 1px solid rgba($color-charcoal, 0.1);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--header {
+      background: $color-charcoal;
+      color: $color-cream;
+      font-weight: $font-weight-semibold;
+
+      .highlight {
+        color: $color-gold;
+      }
+    }
+
+    &--total {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-base;
+      background: rgba($color-gold, 0.1);
+    }
+
+    .highlight {
+      font-weight: $font-weight-semibold;
+      color: $color-gold-dark;
+    }
+  }
+
+  .cost-note {
+    text-align: center;
+    margin-top: $spacing-6;
+    font-size: $font-size-md;
+    color: $color-text-secondary;
+  }
+
+  .cta-section {
+    background: $color-charcoal;
+    padding: $spacing-16 0;
+    text-align: center;
+
+    h2 {
+      color: $color-cream;
+      margin-bottom: $spacing-4;
+    }
+
+    p {
+      color: rgba($color-cream, 0.8);
+      font-size: $font-size-lg;
+      max-width: 600px;
+      margin: 0 auto $spacing-8;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    justify-content: center;
+  }
+</style>
