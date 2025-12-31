@@ -1,0 +1,64 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1C1C1C"/>
+
+  <!-- Decorative accent lines -->
+  <line x1="100" y1="200" x2="300" y2="200" stroke="#C9A962" stroke-width="2" opacity="0.6"/>
+  <line x1="900" y1="430" x2="1100" y2="430" stroke="#C9A962" stroke-width="2" opacity="0.6"/>
+
+  <!-- Decorative corner elements -->
+  <rect x="80" y="80" width="40" height="2" fill="#C9A962" opacity="0.4"/>
+  <rect x="80" y="80" width="2" height="40" fill="#C9A962" opacity="0.4"/>
+  <rect x="1080" y="548" width="40" height="2" fill="#C9A962" opacity="0.4"/>
+  <rect x="1118" y="510" width="2" height="40" fill="#C9A962" opacity="0.4"/>
+
+  <!-- Main title -->
+  <text x="600" y="260"
+        font-family="Playfair Display, serif"
+        font-size="72"
+        font-weight="700"
+        fill="#FAF8F5"
+        text-anchor="middle">
+    Premium Cat Litter
+  </text>
+
+  <!-- Gold accent underline -->
+  <rect x="400" y="280" width="400" height="4" fill="#C9A962" rx="2"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="350"
+        font-family="Inter, sans-serif"
+        font-size="32"
+        font-weight="400"
+        fill="#E4D5A8"
+        text-anchor="middle">
+    Natural. Safe. Superior.
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="410"
+        font-family="Inter, sans-serif"
+        font-size="24"
+        font-weight="400"
+        fill="#C9A962"
+        text-anchor="middle">
+    The luxury your cat deserves
+  </text>
+
+  <!-- Website branding -->
+  <text x="600" y="540"
+        font-family="Inter, sans-serif"
+        font-size="20"
+        font-weight="500"
+        fill="#A88C4A"
+        text-anchor="middle"
+        opacity="0.8">
+    allnaturalcatlitter.com
+  </text>
+</svg>

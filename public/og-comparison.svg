@@ -1,0 +1,110 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1C1C1C"/>
+
+  <!-- Decorative split design -->
+  <rect x="0" y="0" width="600" height="630" fill="#1C1C1C"/>
+  <rect x="600" y="0" width="600" height="630" fill="#252525"/>
+
+  <!-- Vertical gold divider -->
+  <rect x="597" y="0" width="6" height="630" fill="#C9A962"/>
+
+  <!-- Decorative comparison symbols -->
+  <text x="300" y="480"
+        font-family="Inter, sans-serif"
+        font-size="80"
+        font-weight="600"
+        fill="#C9A962"
+        text-anchor="middle"
+        opacity="0.2">
+    vs
+  </text>
+
+  <!-- Title -->
+  <text x="600" y="140"
+        font-family="Playfair Display, serif"
+        font-size="56"
+        font-weight="700"
+        fill="#FAF8F5"
+        text-anchor="middle">
+    Cat Litter
+  </text>
+
+  <text x="600" y="210"
+        font-family="Playfair Display, serif"
+        font-size="56"
+        font-weight="700"
+        fill="#FAF8F5"
+        text-anchor="middle">
+    Comparison Guide
+  </text>
+
+  <!-- Gold accent underline -->
+  <rect x="380" y="230" width="440" height="4" fill="#C9A962" rx="2"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="310"
+        font-family="Inter, sans-serif"
+        font-size="28"
+        font-weight="400"
+        fill="#E4D5A8"
+        text-anchor="middle">
+    Find the perfect litter for your cat
+  </text>
+
+  <!-- Feature bullets -->
+  <g opacity="0.8">
+    <circle cx="380" cy="390" r="4" fill="#C9A962"/>
+    <text x="395" y="397"
+          font-family="Inter, sans-serif"
+          font-size="20"
+          font-weight="400"
+          fill="#FAF8F5">
+      Compare all types
+    </text>
+
+    <circle cx="380" cy="430" r="4" fill="#C9A962"/>
+    <text x="395" y="437"
+          font-family="Inter, sans-serif"
+          font-size="20"
+          font-weight="400"
+          fill="#FAF8F5">
+      Pros and cons
+    </text>
+
+    <circle cx="640" cy="390" r="4" fill="#C9A962"/>
+    <text x="655" y="397"
+          font-family="Inter, sans-serif"
+          font-size="20"
+          font-weight="400"
+          fill="#FAF8F5">
+      Expert recommendations
+    </text>
+
+    <circle cx="640" cy="430" r="4" fill="#C9A962"/>
+    <text x="655" y="437"
+          font-family="Inter, sans-serif"
+          font-size="20"
+          font-weight="400"
+          fill="#FAF8F5">
+      Cost analysis
+    </text>
+  </g>
+
+  <!-- Website branding -->
+  <text x="600" y="550"
+        font-family="Inter, sans-serif"
+        font-size="20"
+        font-weight="500"
+        fill="#A88C4A"
+        text-anchor="middle"
+        opacity="0.8">
+    allnaturalcatlitter.com
+  </text>
+</svg>

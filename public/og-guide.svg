@@ -1,0 +1,97 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap');
+    </style>
+    <linearGradient id="creamGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAF8F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F0E8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#creamGradient)"/>
+
+  <!-- Decorative book/guide visual element -->
+  <rect x="100" y="180" width="280" height="360" fill="#1C1C1C" rx="8" opacity="0.08"/>
+  <rect x="105" y="185" width="270" height="350" fill="#C9A962" rx="6" opacity="0.12"/>
+
+  <!-- Decorative page lines -->
+  <rect x="140" y="240" width="200" height="2" fill="#C9A962" opacity="0.3" rx="1"/>
+  <rect x="140" y="280" width="180" height="2" fill="#C9A962" opacity="0.3" rx="1"/>
+  <rect x="140" y="320" width="200" height="2" fill="#C9A962" opacity="0.3" rx="1"/>
+  <rect x="140" y="360" width="160" height="2" fill="#C9A962" opacity="0.3" rx="1"/>
+
+  <!-- Gold accent bar -->
+  <rect x="0" y="0" width="12" height="630" fill="#C9A962"/>
+
+  <!-- Main title -->
+  <text x="680" y="200"
+        font-family="Playfair Display, serif"
+        font-size="68"
+        font-weight="700"
+        fill="#1C1C1C"
+        text-anchor="middle">
+    Complete
+  </text>
+
+  <text x="680" y="280"
+        font-family="Playfair Display, serif"
+        font-size="68"
+        font-weight="700"
+        fill="#1C1C1C"
+        text-anchor="middle">
+    Cat Litter Guide
+  </text>
+
+  <!-- Gold accent underline -->
+  <rect x="480" y="300" width="400" height="4" fill="#C9A962" rx="2"/>
+
+  <!-- Subtitle -->
+  <text x="680" y="370"
+        font-family="Inter, sans-serif"
+        font-size="26"
+        font-weight="500"
+        fill="#C9A962"
+        text-anchor="middle">
+    Everything you need to know
+  </text>
+
+  <!-- Feature list -->
+  <g opacity="0.8">
+    <text x="520" y="440"
+          font-family="Inter, sans-serif"
+          font-size="21"
+          font-weight="400"
+          fill="#1C1C1C">
+      • How to choose the right litter
+    </text>
+
+    <text x="520" y="475"
+          font-family="Inter, sans-serif"
+          font-size="21"
+          font-weight="400"
+          fill="#1C1C1C">
+      • Training and maintenance tips
+    </text>
+
+    <text x="520" y="510"
+          font-family="Inter, sans-serif"
+          font-size="21"
+          font-weight="400"
+          fill="#1C1C1C">
+      • Common problems solved
+    </text>
+  </g>
+
+  <!-- Website branding -->
+  <text x="680" y="580"
+        font-family="Inter, sans-serif"
+        font-size="20"
+        font-weight="500"
+        fill="#A88C4A"
+        text-anchor="middle"
+        opacity="0.7">
+    allnaturalcatlitter.com
+  </text>
+</svg>

@@ -1,0 +1,115 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap');
+    </style>
+    <radialGradient id="radialGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#C9A962;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#C9A962;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1C1C1C"/>
+
+  <!-- Radial gold glow -->
+  <circle cx="600" cy="315" r="400" fill="url(#radialGold)"/>
+
+  <!-- Decorative leaf/natural elements (stylized) -->
+  <ellipse cx="200" cy="150" rx="60" ry="20" fill="#C9A962" opacity="0.15" transform="rotate(-30 200 150)"/>
+  <ellipse cx="1000" cy="480" rx="60" ry="20" fill="#C9A962" opacity="0.15" transform="rotate(30 1000 480)"/>
+
+  <!-- Small decorative circles (berries/natural dots) -->
+  <circle cx="180" cy="200" r="8" fill="#C9A962" opacity="0.2"/>
+  <circle cx="220" cy="180" r="6" fill="#C9A962" opacity="0.2"/>
+  <circle cx="980" cy="430" r="8" fill="#C9A962" opacity="0.2"/>
+  <circle cx="1020" cy="450" r="6" fill="#C9A962" opacity="0.2"/>
+
+  <!-- Main title -->
+  <text x="600" y="220"
+        font-family="Playfair Display, serif"
+        font-size="72"
+        font-weight="700"
+        fill="#FAF8F5"
+        text-anchor="middle">
+    Natural Ingredients
+  </text>
+
+  <!-- Gold accent underline with dots -->
+  <circle cx="420" cy="245" r="3" fill="#C9A962"/>
+  <rect x="430" y="242" width="340" height="4" fill="#C9A962" rx="2"/>
+  <circle cx="777" cy="245" r="3" fill="#C9A962"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="310"
+        font-family="Inter, sans-serif"
+        font-size="30"
+        font-weight="400"
+        fill="#E4D5A8"
+        text-anchor="middle">
+    Pure. Safe. Tested.
+  </text>
+
+  <!-- Ingredient highlights -->
+  <g opacity="0.9">
+    <!-- Left column -->
+    <circle cx="320" cy="405" r="5" fill="#C9A962"/>
+    <text x="340" y="412"
+          font-family="Inter, sans-serif"
+          font-size="22"
+          font-weight="400"
+          fill="#FAF8F5">
+      100% Natural Materials
+    </text>
+
+    <circle cx="320" cy="450" r="5" fill="#C9A962"/>
+    <text x="340" y="457"
+          font-family="Inter, sans-serif"
+          font-size="22"
+          font-weight="400"
+          fill="#FAF8F5">
+      No Harmful Chemicals
+    </text>
+
+    <!-- Right column -->
+    <circle cx="680" cy="405" r="5" fill="#C9A962"/>
+    <text x="700" y="412"
+          font-family="Inter, sans-serif"
+          font-size="22"
+          font-weight="400"
+          fill="#FAF8F5">
+      Hypoallergenic
+    </text>
+
+    <circle cx="680" cy="450" r="5" fill="#C9A962"/>
+    <text x="700" y="457"
+          font-family="Inter, sans-serif"
+          font-size="22"
+          font-weight="400"
+          fill="#FAF8F5">
+      Eco-Friendly
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="600" y="530"
+        font-family="Inter, sans-serif"
+        font-size="24"
+        font-weight="500"
+        fill="#C9A962"
+        text-anchor="middle"
+        opacity="0.8">
+    What goes in matters
+  </text>
+
+  <!-- Website branding -->
+  <text x="600" y="580"
+        font-family="Inter, sans-serif"
+        font-size="20"
+        font-weight="500"
+        fill="#A88C4A"
+        text-anchor="middle"
+        opacity="0.7">
+    allnaturalcatlitter.com
+  </text>
+</svg>
